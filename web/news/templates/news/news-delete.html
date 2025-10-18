@@ -1,0 +1,15 @@
+{% extends 'main/layout.html'%}
+{% block title %}Удаление статьи{% endblock %}
+
+{% block content %}
+<div class="news-wrap">
+  <div class="news-form">
+    <h1>Удаление статьи</h1>
+    <form method="post">
+      {% csrf_token %}
+      <button class="btn-primary-news" type="submit">Удалить статью</button>
+      <a href="{% url 'news_home' %}" class="btn-cancel">Отмена</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

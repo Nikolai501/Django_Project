@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Маникюрный салон{% endblock %}</title>
+
+
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="{% static 'main/img/photo_2025-10-16_22-01-30.jpg' %}" alt="Логотип салона">
+                <span>Beauty Nails</span>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'news_home' %}">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="site-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Beauty Nails | Все права защищены</p>
+    </footer>
+</body>
+</html>
