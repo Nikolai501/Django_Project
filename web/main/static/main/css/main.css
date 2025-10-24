@@ -461,6 +461,16 @@ body {
   margin-bottom:14px;
 }
 
+.news-detail .content {
+    font-size: 18px; /* Увеличиваем размер шрифта */
+    line-height: 1.6; /* Добавляем межстрочный интервал для удобства чтения */
+}
+
+.news-detail {
+    max-width: 700px; /* Ограничиваем ширину контейнера статьи */
+    margin: 0 auto; /* Центрируем на странице */
+}
+
 /* Формы создания/редактирования новостей */
 .news-form {
   background:var(--card);
@@ -503,7 +513,7 @@ body {
   background:var(--accent);
   color:#fff;
   text-decoration:none;
-  padding:10px 14px;
+  padding:7px 14px;
   border-radius:9px;
   font-weight:600;
   border:none;
@@ -577,3 +587,4 @@ body {
     outline: none;
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
+
